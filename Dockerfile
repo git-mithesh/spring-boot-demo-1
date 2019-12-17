@@ -1,4 +1,4 @@
 FROM openjdk:8
-ADD target/spring-boot-docker-1.jar spring-boot-docker-1.jar
+ADD target/docker-spring-boot.jar docker-spring-boot.jar
 EXPOSE 8585
-ENTRYPOINT ["java","-jar","spring-boot-docker-1.jar"]
+ENTRYPOINT ["java","-jar","docker-spring-boot.jar"]
