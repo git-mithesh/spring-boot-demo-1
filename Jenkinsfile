@@ -4,6 +4,9 @@ node {
 	stage('Clone Repository'){
 	checkout scm
 	}
+	stage(;Compile-Package){
+	sh 'mvn package'
+	}
 	stage("Build image"){
 	app=docker.build("mitheshjain88/spring-boot-docker-1")
 	}
