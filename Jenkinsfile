@@ -6,7 +6,7 @@ node {
 	}
 	stage('Compile-Package'){
 	def mvnHome=tool name: 'maven3.6.3', type: 'maven'
-	sh '"${mvnHome}/bin/mvn package"
+	sh "${mvnHome}/bin/mvn package"
 	}
 	stage("Build image"){
 	app=docker.build("mitheshjain88/spring-boot-docker-1")
