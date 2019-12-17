@@ -21,6 +21,6 @@
       <artifactId>spring-boot-maven-plugin</artifactId>
     </plugin>
     </plugins>
-    <finalName>docker-spring-boot</finalName>
+    <finalName>spring-boot-docker-1/finalName>
 </build>
 </project>
