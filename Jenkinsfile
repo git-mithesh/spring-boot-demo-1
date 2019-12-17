@@ -4,7 +4,7 @@ node {
 	stage('Clone Repository'){
 	checkout scm
 	}
-	stage('Compile-Package){
+	stage('Compile-Package'){
 	sh 'mvn package'
 	}
 	stage("Build image"){
